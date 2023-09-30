@@ -7,7 +7,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <script src="script.js"></script>
+    <div id="app">
+        <h1>Multiple Timers App</h1>
+        <div id="current-time"></div>
+        <div class="create-alarm">
+          <!-- <div>Set Alarm</div> -->
+          <div class="form-actions set-time-box">
+            <form>
+              <div class="alarm-inputs set-time-content">
+                <p>Set Time:</p>
+                <div>
+                <input
+                  type="number"
+                  name="hour"
+                  placeholder="Hours"
+                  min="0"
+                  max="12"
+                  required
+                />
+                :
+                <input
+                  type="number"
+                  name="min"
+                  min="0"
+                  max="60"
+                  placeholder="Minutes"
+                  required
+                />
+                :
+                <input
+                  type="number"
+                  name="sec"
+                  min="0"
+                  max="60"
+                  placeholder="Seconds"
+                  required
+                />
+              </div>
+                <!-- <select name="zone" required>
+                  <option value="" selected disabled>Zone</option>
+                  <option value="AM">AM</option>
+                  <option value="PM">PM</option>
+                </select> -->
+                <button>Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="active-alarm">
+        <div id="alarm-text"></div>
+        <button id="clear-alarm">Clear Alarm</button>
+      </div>
+      <audio id="alarm-audio"></audio>
+      
+    <script src="main.js"></script>
 </body>
 </html>

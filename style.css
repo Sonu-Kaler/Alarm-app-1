@@ -1,0 +1,58 @@
+body {
+    font-family: monaco;
+    background-color: rgb(23, 26, 26);
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #current-time {
+    font-size: 32px;
+  }
+  #current-time,
+  .create-alarm,
+  h1,
+  #active-alarm {
+    text-align: center;
+  }
+  .create-alarm,
+  .alarm-inputs,
+  #active-alarm {
+    margin-top: 20px;
+  }
+  input {
+    width: 100px;
+    height: 30px;
+  }
+  .alarm-inputs,
+  #alarm-text {
+    margin-bottom: 30px;
+  }
+  button {
+    font-size: 18px;
+  }
+  #active-alarm {
+    display: none;
+  }
+
+
+  .set-time-box{
+    background-color: rgb(36, 36, 36);
+    width: 600px;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+
+  input{
+    border: none;
+    border-radius: 5px;
+  }
+
+  .set-time-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
